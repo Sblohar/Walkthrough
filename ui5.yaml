@@ -1,0 +1,14 @@
+specVersion: "3.2"
+metadata:
+  name: ui5.quickstart
+type: application
+framework:
+  name: OpenUI5
+  version: "1.126.0"
+  libraries:
+    - name: sap.m
+    - name: sap.f
+    - name: sap.tnt
+    - name: sap.ui.core
+    - name: sap.ui.layout
+    - name: themelib_sap_horizon
