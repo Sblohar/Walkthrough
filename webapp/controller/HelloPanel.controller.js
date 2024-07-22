@@ -11,6 +11,17 @@ sap.ui.define([
           const sMsg = oBundle.getText("helloMsg", [sRecipient]);
  
           MessageToast.show(sMsg);
+       },
+       onOpenDialog: async function(){
+         this.oDialog ??= await this.loadFragment({
+             name: "ui5.walkthrough.view.HelloDialog"
+         });
+         this.oDialog.open();
+       },
+       onCloseDialog: function(){
+           if(this.oDialog){
+                this.oDialog.close();
+           }
        }
     });
  });

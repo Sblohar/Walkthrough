@@ -15,12 +15,9 @@
                   </f:heading>
                </f:DynamicPageTitle>
             </f:title>
-              
             <f:content>
-            <mvc:XMLView viewName="ui5.walkthrough.view.HelloPanel"/>
-          
-            </f:content>
-            
+               <mvc:XMLView viewName="ui5.walkthrough.view.HelloPanel"/> 
+            </f:content>   
         </f:DynamicPage>
       </pages>
   </App>

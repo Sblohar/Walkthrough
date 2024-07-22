@@ -1,0 +1,28 @@
+<core:FragmentDefinition
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core">
+    <Dialog 
+       id="helloDialog">
+         <customHeader>
+            <OverflowToolbar>
+                 <core:Icon 
+                   src="sap-icon://sap-ui5"
+                   size="1rem"/>
+                   <Title text="Hello{/recipient/name}"/>
+            </OverflowToolbar>
+         </customHeader>
+         <content>
+             <core:Icon 
+                    src="sap-icon://sap-box"
+                    size="5rem"
+                    class="sapUiMediumMargin"/>
+         </content>
+         <endButton>
+             <Button
+               type="Emphasized"
+               text="close"
+               press=".onCloseDialog"/>
+         </endButton>
+       </Dialog>
+
+</core:FragmentDefinition>
