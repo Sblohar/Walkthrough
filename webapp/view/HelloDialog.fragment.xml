@@ -8,14 +8,18 @@
                  <core:Icon 
                    src="sap-icon://sap-ui5"
                    size="1rem"/>
-                   <Title text="Hello{/recipient/name}"/>
+                   <Title text="Open"/>
             </OverflowToolbar>
          </customHeader>
          <content>
-             <core:Icon 
+             <HeaderContainer >
+                 <Text text="Welcome to our company" class="dialogtext"></Text>
+             </HeaderContainer>
+             <!-- <core:Icon 
+                    
                     src="sap-icon://sap-box"
                     size="5rem"
-                    class="sapUiMediumMargin"/>
+                    class="sapUiMediumMargin "/> -->
          </content>
          <endButton>
              <Button

@@ -12,18 +12,15 @@ sap.ui.define([
          },
  
        init() {
-          // call the init function of the parent
           UIComponent.prototype.init.apply(this, arguments);
-          // set data model
           const oData = {
              recipient : {
-                name : "World"
+                name : "Surabhi"
              }
           };
           const oModel = new JSONModel(oData);
           this.setModel(oModel);
  
-          // set i18n model
           const i18nModel = new ResourceModel({
              bundleName: "ui5.walkthrough.i18n.i18n"
           });

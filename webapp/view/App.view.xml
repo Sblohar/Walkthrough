@@ -7,7 +7,7 @@
    <Shell>
      <App >
       <pages>
-        <f:DynamicPage >
+        <f:DynamicPage showFooter="true">
             <f:title>
                <f:DynamicPageTitle >
                   <f:heading>
@@ -18,6 +18,22 @@
             <f:content>
                <mvc:XMLView viewName="ui5.walkthrough.view.HelloPanel"/> 
             </f:content>   
+         <f:footer>
+				  <OverflowToolbar>
+                 <Button
+                 type="Emphasized" 
+                 text="Footer"/>
+                 <ToolbarSpacer></ToolbarSpacer>
+                 <Button
+                  type="Success" 
+                  icon="sap-icon://customer-and-contacts"
+                  />
+                  <Button 
+                     icon="sap-icon://call"
+                     type="Reject"/>
+
+              </OverflowToolbar>
+			</f:footer>
         </f:DynamicPage>
       </pages>
   </App>
