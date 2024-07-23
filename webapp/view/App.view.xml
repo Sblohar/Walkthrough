@@ -26,12 +26,10 @@
                  <ToolbarSpacer></ToolbarSpacer>
                  <Button
                   type="Success" 
-                  icon="sap-icon://customer-and-contacts"
-                  />
+                  icon="sap-icon://customer-and-contacts"/>
                   <Button 
                      icon="sap-icon://call"
                      type="Reject"/>
-
               </OverflowToolbar>
 			</f:footer>
         </f:DynamicPage>
