@@ -7,7 +7,20 @@
    <Shell>
      <App >
       <pages>
-        <f:DynamicPage showFooter="true">
+        <Page title="{i18n>homePageTitle}">
+               <content>
+                  <Panel
+                     headerText="{i18n>helloPanelTitle}"
+                     class="sapUiResponsiveMargin"
+                     width="auto">
+                  <content>
+                     <mvc:XMLView viewName="ui5.walkthrough.view.HelloPanel"/>
+                     <mvc:XMLView viewName="ui5.walkthrough.view.InvoiceList"/>
+                  </content>
+                  </Panel>
+               </content>
+            </Page>
+        <!-- <f:DynamicPage showFooter="true">
             <f:title>
                <f:DynamicPageTitle >
                   <f:heading>
@@ -32,7 +45,7 @@
                      type="Reject"/>
               </OverflowToolbar>
 			</f:footer>
-        </f:DynamicPage>
+        </f:DynamicPage> -->
       </pages>
   </App>
   </Shell>
